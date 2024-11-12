@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: wnstndks/OSSW  # 메인 레포지토리의 소유자와 이름을 적어줍니다
           token: ${{ secrets.GITHUB_TOKEN }}
           path: main_repo
 
       - name: Checkout my repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Sync changes
         run: |
